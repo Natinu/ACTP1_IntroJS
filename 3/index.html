@@ -14,8 +14,20 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <style>
+  #row-3{
+    transition: 1s;
+  }
+
+    
+
+  </style>
   </head>
-  <body>
+    <body>
     <h1> Hey !! </h1>
     <section class="section-1">
       <h1> Hey </h1>
@@ -38,7 +50,7 @@
         </tr>
 
         <tr class="row" id="row-3">
-          <td> 3 </td>
+          <td> 3333333 </td>
           <td> 3 </td>
           <td> 3 </td>
         </tr>
@@ -62,5 +74,33 @@
 
       </fieldset>
     </form>
+
+    <script>
+      $("h1").css("color", "red");
+      $(".section-1").css("background", "yellow");
+
+      variable = $(".counter").text();
+      variable = parseInt (variable);
+      // console.log (variable+10);
+      variable = variable + 10;
+      $(".counter").text(variable);
+
+      $("#row-3").on("click", function(){
+      $("#row-3").css ("background","gray");
+      })
+
+
+      $("table tr:last-child").css("background", "red");
+
+
+
+
+
+
+      
+
+
+
+    </script>
   </body>
 </html>
